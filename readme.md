@@ -5,16 +5,15 @@ A Dr.  Norman  Borlaugtribute page as a [Free Code Camp](https://www.freecodecam
 
 ## ✨ Demo
 
-![Tribute Page](./art/tribute-page.gif)
-
-
-
+![Tribute Page](./resources/art/demo.gif)
 
 
 ## 🚀 Usage
 1. Clone the Repository  
-	> git clone https://github.com/abdelghanyMh/ffc_stock-price-checker.git
-	> cd ffc_stock-price-checker
+	> git clone https://github.com/abdelghanyMh/fcc-tribute-page.git
+	> 
+	> cd fcc-tribute-page
+
 1. run this  command to run the site in localhost: 
 `python -m http.server`
 3. To access to this site from local machine 
