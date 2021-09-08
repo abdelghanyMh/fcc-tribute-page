@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap");
+#timeline .life-event h3, #wiki-link h1, #bio, #timeline-info, header .hero #bio {
+  -webkit-text-stroke: 0.7px #222556;
+}
+
+#wiki-link h1, #bio, #timeline-info, header .hero #bio {
+  font-family: Crimson Text, serif;
+  color: #989898;
+  font-style: italic;
+  font-size: 36px;
+}
+
+#wiki-link, #timeline {
+  font-family: "Playfair Display", serif;
+  width: 50%;
+  margin: auto;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 83vh;
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+  margin: 0;
+}
+header .hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 500px;
+  width: 1000px;
+  margin: 0 auto;
+}
+header .hero h1 {
+  margin-bottom: 15px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 18px;
+}
+header .hero .line {
+  margin-bottom: 20px;
+  height: 40px;
+  width: 40px;
+  border-bottom: 2px solid #d78e38;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.4s linear, opacity 0.4s linear;
+}
+header .hero #bio {
+  -webkit-text-stroke: 0.6px #d78e38;
+}
+header .date {
+  margin: 0;
+  font-family: Crimson Text, serif;
+  font-size: 24px;
+  font-style: normal;
+  letter-spacing: 4px;
+}
+
+#img-div {
+  padding: 1em;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+#img-div #image {
+  max-width: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 14px;
+}
+#img-div #img-caption {
+  font-family: Crimson Text, serif;
+  width: 90%;
+  margin: 1.2rem auto 1.2rem auto;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+
+#timeline-info {
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+#timeline {
+  margin-top: 3rem;
+}
+#timeline h4 {
+  margin-bottom: 20px;
+}
+#timeline .life-event {
+  font-family: Crimson Text, serif;
+  display: flex;
+  margin-bottom: 30px;
+}
+#timeline .life-event h3 {
+  color: #989898;
+}
+#timeline .life-event span {
+  padding: 0 0 0 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+#wiki-link {
+  width: auto;
+  padding: 7% 7% 3%;
+  background-color: #1D0C0C;
+  border-color: #1D0C0C;
+  color: #deb0b0;
+  align-items: center;
+  letter-spacing: 0.13em;
+}
+#wiki-link h1, #wiki-link p {
+  color: #989898;
+  -webkit-text-stroke: 0.7px #fff;
+}
+#wiki-link h1 {
+  font-size: 2.3em;
+}
+#wiki-link p {
+  margin: 16px auto;
+}
+#wiki-link .wiki-btn {
+  background-color: #deb0b0;
+  width: 12em;
+  border-radius: 37px;
+  padding: 17px;
+}
+#wiki-link .wiki-btn:hover, #wiki-link .wiki-btn:focus {
+  color: #fff;
+  background-color: #1D0C0C;
+  border: 1px solid #deb0b0;
+  margin-top: 3;
+}
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: -0.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1;
+}
+
+#links {
+  margin-left: 3%;
+}
+
+blockquote {
+  margin: 29px 0 0;
+  color: #ca8431;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+}
+blockquote p {
+  margin-top: 2px;
+  color: #000;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.2em;
+  background-color: #1D0C0C;
+  border-color: #1D0C0C;
+  color: #deb0b0;
+}
+footer svg {
+  fill: #E8413B;
+}
+footer a {
+  padding-left: 0.3em;
+}
+
+.ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml7 .text-wrapper .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+a:hover {
+  color: #2b6de9;
+  text-decoration: underline dotted;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 50vh;
+    width: 100vw;
+  }
+  header .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: inherit;
+  }
+  header .hero #title {
+    padding: 8vw;
+  }
+  header .hero h1 {
+    font-size: 23px;
+    letter-spacing: 8px;
+  }
+  header .hero #bio {
+    font-size: 18px;
+  }
+
+  #timeline-info {
+    margin: auto;
+    padding-left: 2vw;
+  }
+
+  #timeline {
+    margin: 0vw;
+  }
+  #timeline .life-event {
+    width: 90vw;
+    padding: 3vw;
+  }
+
+  #wiki-link h1 {
+    font-size: 23px;
+    text-align: center;
+  }
+  #wiki-link p {
+    font-size: 16px;
+  }
+
+  blockquote {
+    width: 80vw;
+    padding-left: 8vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

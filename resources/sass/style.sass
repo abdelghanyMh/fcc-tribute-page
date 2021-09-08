@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,900&display=swap")
+
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap")
+
+$font-primary: 'Playfair Display', serif
+$font-secondary: Crimson Text, serif
+$small-mobile-font-size: 18px
+$large-mobile-font-size: 23px
+$desktop-font-size: 18px
+$black: #000
+$white: #fff
+$gold: #d78e38
+$gray: #989898
+$wiki-primay: #1D0C0C
+$wiki-secondary: lighten(#1D0C0C, 70%)
+%text-stroke
+  -webkit-text-stroke: 0.7px #222556
+
+%secondary-header
+  font-family: $font-secondary
+  color: $gray
+  font-style: italic
+  font-size: 36px
+  @extend %text-stroke
+
+%section-decoration
+  font-family: "Playfair Display", serif
+  width: 50%
+  margin: auto
+  margin-top: 5rem
+  display: flex
+  flex-direction: column
+
+*
+  border: 0
+  margin: 0
+  padding: 0
+
+header
+  height: 83vh
+  width: 100%
+  color: $white
+  background-color: $black
+  margin: 0
+  .hero
+    display: flex
+    flex-direction: row
+    align-items: center
+    height: 500px
+    width: 1000px
+    margin: 0 auto
+    h1
+      margin-bottom: 15px
+      color: $white
+      font-family: $font-primary
+      font-size: 50px
+      font-weight: 200
+      font-style: normal
+      letter-spacing: 18px
+    .line
+      margin-bottom: 20px
+      height: 40px
+      width: 40px
+      border-bottom: 2px solid $gold
+      visibility: hidden
+      opacity: 0
+      transition: visibility .4s linear,opacity .4s linear
+
+    #bio
+      @extend %secondary-header
+      -webkit-text-stroke: 0.6px $gold
+
+  .date
+    margin: 0
+    font-family: $font-secondary
+    font-size: 24px
+    font-style: normal
+    letter-spacing: 4px
+#bio , #timeline-info
+  @extend %secondary-header
+
+#img-div
+  padding: 1em
+  max-width: 100%
+  margin-left: auto
+  margin-right: auto
+  background-color: $white
+  #image
+    max-width: 100%
+    width: auto
+    display: block
+    margin: 0 auto
+    border-radius: 14px
+  #img-caption
+    font-family: $font-secondary
+    width: 90%
+    margin: 1.2rem auto 1.2rem auto
+    font-size: 1.2rem
+    line-height: 1.2rem
+#timeline-info
+  margin-top: 50px
+  margin-left: 200px
+
+#timeline
+  @extend %section-decoration
+  margin-top: 3rem
+
+  h4
+    margin-bottom: 20px
+  .life-event
+    font-family: $font-secondary
+    display: flex
+    margin-bottom: 30px
+    h3
+      color: $gray
+      @extend %text-stroke
+    span
+      padding: 0 0 0 50px
+      font-size: 1.2rem
+      font-weight: 600
+      letter-spacing: 0.140em
+#wiki-link
+  @extend %section-decoration
+  width: auto
+  padding: 7% 7% 3%
+  background-color: $wiki-primay
+  border-color: $wiki-primay
+  color: $wiki-secondary
+  align-items: center
+  letter-spacing: 0.130em
+  h1,p
+    color: $gray
+    -webkit-text-stroke: 0.7px $white
+  h1
+    @extend %secondary-header
+    font-size: 2.3em
+
+  p
+    margin: 16px auto
+  .wiki-btn
+    background-color: $wiki-secondary
+    width: 12em
+    border-radius: 37px
+    padding: 17px
+    &:hover,&:focus
+      color: $white
+      background-color: $wiki-primay
+      border: 1px solid $wiki-secondary
+      margin-top: 3
+hr
+  margin-top: 3rem
+  margin-bottom: -0.5rem
+  border-width: 0
+  border-top: 1px solid #E1E1E1
+
+
+#links
+  margin-left: 3%
+
+blockquote
+  margin: 29px 0 0
+  color: #ca8431
+  font-family: "Playfair Display", serif
+  font-size: $desktop-font-size
+  
+  p
+    margin-top: 2px
+    color: $black
+
+footer
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  padding: 1.2em
+  background-color: $wiki-primay
+  border-color: $wiki-primay
+  color: $wiki-secondary
+  svg
+    fill: #E8413B
+  a
+    padding-left: 0.3em
+// life time animation style 1914-2009 
+// src: https://tobiasahlin.com/moving-letters/#7
+.ml7
+  position: relative
+  font-weight: 900
+  font-size: 3.7em
+  .text-wrapper
+    position: relative
+    display: inline-block
+    padding-top: 0.2em
+    padding-right: 0.05em
+    padding-bottom: 0.1em
+    overflow: hidden
+    .letter
+      transform-origin: 0 100%
+      display: inline-block
+      line-height: 1em
+
+  // my links style just igonre it 
+a:hover
+  color: rgb(43, 109, 233)
+  text-decoration: underline dotted
+
+@media only screen and (max-width: 1024px)
+  header
+    height: 50vh
+    width: 100vw
+    .hero
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      width: 100%
+      height: inherit
+      #title
+        padding: 8vw
+
+      h1
+        font-size: $large-mobile-font-size
+        letter-spacing: 8px
+      #bio
+        font-size: $small-mobile-font-size
+
+  #timeline-info
+    margin: auto
+    padding-left: 2vw
+  #timeline
+    margin: 0vw
+    .life-event
+      width: 90vw
+      padding: 3vw
+  #wiki-link
+    h1
+      font-size: $large-mobile-font-size
+      text-align: center
+    p
+      font-size: 16px
+  blockquote
+    width: 80vw
+    padding-left: 8vw
