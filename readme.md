@@ -1,7 +1,7 @@
 ﻿<h1 align="center">Welcome to Tribute Page 👋</h1>
 
 A Dr.  Norman  Borlaugtribute page as a [Free Code Camp](https://www.freecodecamp.com/challenges/build-a-tribute-page) front-end project where I show some important events and achievements in the doctor's life.
-### 🏠 [Homepage](https://boilerplate-project-stockchecker.abdelghanymh.repl.co/)
+### 🏠 [Homepage](https://abdelghanymh.github.io/fcc-tribute-page/)
 
 ## ✨ Demo
 
